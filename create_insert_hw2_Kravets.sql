@@ -48,7 +48,7 @@ As a result, display the columns: "OrderQTY", "SalesOrderId", "UnitPrice".
 USE AdventureWorks2019_Kravets
 
 SELECT
-	TOP 3 OrderQTY
+	TOP 3 WITH TIES OrderQTY
 	,SalesOrderId
 	,UnitPrice
 FROM Sales.SalesOrderDetail
