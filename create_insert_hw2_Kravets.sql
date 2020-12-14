@@ -61,7 +61,7 @@ As a result, display the columns: "Name", "UnitPrice".
 */
 
 SELECT
-	Name
+	DISTINCT Name
 	,UnitPrice
 FROM Production.Product pp
 LEFT JOIN Sales.SalesOrderDetail ssod ON pp.ProductID = ssod.ProductID
