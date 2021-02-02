@@ -1,0 +1,1 @@
+cat sample_cut.txt | grep -vf ${filename} | cut -d' ' -f1 | sed 1d > namesakes_preparation

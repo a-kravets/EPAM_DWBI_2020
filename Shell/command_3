@@ -1,0 +1,2 @@
+name=$(cat namesakes_preparation)
+grep -c ${name} sample_cut.txt >> namesakes_preparation

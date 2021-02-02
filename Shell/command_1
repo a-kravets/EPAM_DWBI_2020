@@ -1,0 +1,4 @@
+d=$(date --date="${dataset_date} -${date_diff} 1 day" +%Y-%m-%d)
+grep "Marketing" sample_cut.txt > marketing_${d}.txt
+filename=$(find . -name "marketing_*.txt")
+sed -i -e 's/\<Marketing\>//g' ${filename}
